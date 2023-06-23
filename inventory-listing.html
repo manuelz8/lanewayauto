@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Listing</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body class="inventory-listing-page">
+    <header class="main-header">
+        <div class="container main-header__top-container">
+            <a href="index.html" class="main-logo">
+                <img src="assets/main-logo.svg" alt="Logo">
+            </a>
+            <div class="main-header__top-container-column-2">
+                <div class="header-info">
+                    <span class="material-symbols-outlined">phone_iphone</span>
+                    <p>Get approved now:</p>
+                    <a href="tel:9024974644">902-497-4644</a>
+                    <form class="search-form" autocomplete="off">
+                        <input id="search" type="search" placeholder="Search ( Make, Model, Type )" autocomplete="off">
+                        <span class="search-button">
+                            <img src="assets/magnifier.svg" alt="">
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="mobile-menu-switch">
+                <span class="material-symbols-outlined menu-icon">
+                    menu
+                </span>
+                <span class="material-symbols-outlined close-icon">
+                    close
+                </span>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-text">
+                    <span class="material-symbols-outlined">phone_iphone</span>
+                    <p>Get approved now:</p>
+                </div>
+                <a class="hamburger-tel" href="tel:9024974644">902-497-4644</a>
+                <ul class="menu-list">
+                    <li><a href="#">Credit Application</a></li>
+                    <li><a href="#">Used car inventory</a></li>
+                    <li><a href="#">Car loan calculator</a></li>
+                    <li><a href="#">Trade-in valuator</a></li>
+                    <li><a href="#">$200 Referral!</a></li>
+                    <li><a href="#">Auto Service</a></li>
+                    <li><a href="#">More </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header__menu">
+            <div class="container">
+                <ul class="menu-list">
+                    <li><a href="#">Credit Application</a></li>
+                    <li><a href="#">Used car inventory</a></li>
+                    <li><a href="#">Car loan calculator</a></li>
+                    <li><a href="#">Trade-in valuator</a></li>
+                    <li><a href="#">$200 Referral!</a></li>
+                    <li><a href="#">Auto Service</a></li>
+                    <li id="more-drop"><a href="#">More <img class="dropdown-button" src="assets/drop-down.svg" alt="Drop-down icon"></a></li>
+                    <ul class="more-options">
+                        <li><a href="#">Option</a></li>
+                        <li><a href="#">Option</a></li>
+                        <li><a href="#">Option</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header__decoration">
+        </div>
+    </header>
+    <section class="inventory-page-container">
+        <div class="pre-inventory-space"><img src="assets/pre-inventory.svg"></div>
+        <div class="inventory-main-content">
+            <div class="inventory-main-content__left">
+                <h2 class="titles-font blue-text">Vehicle Specifications</h2>
+                <div class="vehicle-specifications-card">
+                    <div class="vehicle-specifications-heading">
+                        <h3>VIN: <span>1HKDFKK3493K503K</span></h3>
+                    </div>
+                    <div class="vehicle-specifications-info">
+                        <ul class="vehicle-specifications-info__left">
+                            <li>Make</li>
+                            <li>Model</li>
+                            <li>Trim</li>
+                            <li>Body</li>
+                            <li>KM</li>
+                            <li>Fuel Type</li>
+                            <li>Year</li>
+                            <li>Tranny</li>
+                            <li>Drive</li>
+                            <li>Engine</li>
+                            <li>Color</li>
+                            <li>Interior</li>
+                        </ul>
+                        <ul class="vehicle-specifications-info__right">
+                            <li>Chevrolet</li>
+                            <li>Silverado</li>
+                            <li>1500 LS</li>
+                            <li>Sedan</li>
+                            <li>100</li>
+                            <li>Hybrid</li>
+                            <li>2000</li>
+                            <li>Automatic</li>
+                            <li>RWD</li>
+                            <li>15.3</li>
+                            <li>Red</li>
+                            <li>Black</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="assets/special-divider-side.svg" class="special-divider">
+                <h2 class="titles-font blue-text">Search Latest Vehicles:</h2>
+                <form action="#" class="inventory-main-content__left-form">
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Make</option>
+                            <option value="value2">Example</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Model</option>
+                            <option value="value2">Example</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Body  Style</option>
+                            <option value="value2">Example</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Price Range</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <button class="skew-button blue-bg">Advanced search</button>
+                    <button class="skew-button"><img src="assets/magnifier.svg">Find my vehicle</button>
+                </form>
+                <img src="assets/special-divider-side.svg" class="special-divider">
+                <h4 class="bold">Vehicle Location:</h4>
+                <a href="#" class="vehicle-location"><img src="assets/v-location-map.png" alt="Vehicle Location"></a>
+                <img src="assets/special-divider-side.svg" class="special-divider">
+                <h4 class="bold">WHAT’S YOUR CAR WORTH?</h4>
+                <a href="#" class="trade-value-container"><img src="assets/trade-value.png" alt="Trade Value" class="trade-value-img"></a>
+                <img src="assets/special-divider-side.svg" class="special-divider">
+                <h4 class="bold">Check Your Credit Rate:</h4>
+                <a href="#" class="credit-rate-container"><img src="assets/credit-rate-img.png" alt="Credit rate"></a>
+                <img src="assets/special-divider-side.svg" class="special-divider">
+                <h4 class="bold">TELL US WHAT YOU WANT</h4>
+                <div class="car-selector-side">
+                    <div class="car-selector-side__item">
+                        <img src="assets/truck.svg" alt="Truck">
+                        <a href="#" class="skew-button">Truck</a>
+                    </div>
+                    <div class="car-selector-side__item">
+                        <img src="assets/van.svg" alt="Van">
+                        <a href="#" class="skew-button">Van</a>
+                    </div>
+                    <div class="car-selector-side__item">
+                        <img src="assets/suv.svg" alt="SUV">
+                        <a href="#" class="skew-button">SUV</a>
+                    </div>
+                    <div class="car-selector-side__item">
+                        <img src="assets/car.svg" alt="Car">
+                        <a href="#" class="skew-button">Car</a>
+                    </div>
+                </div>
+            </div>
+            <div class="inventory-main-content__right">
+                <div class="blog-landing__top-info">
+                    <div class="breadcrumbs">
+                         <a href="index.html" class="breadcrumb">Home</a>
+                         <span>></span>
+                         <a href="blog-landing.html" class="breadcrumb">Used Car Inventory</a>
+                         <span>></span>
+                         <a href="blog-landing.html" class="breadcrumb">Chevrolet</a>
+                         <span>></span>
+                         <a href="blog-landing.html" class="breadcrumb">Silverado</a>
+                    </div>
+                </div>
+                <h1 class="blue-text-2">2013 Chevrolet Silverado 1500 LS Cheyenne Edition | <span class="old-price raleway">$25,000</span><span class="new-price">$25,000</span></h1>
+                <div class="car-gallery">
+                    <img src="assets/car-article.png" class="car-main-image">
+                    <div class="gallery-others">
+                        <div class="gallery-others-item">
+                            <img src="assets/car-other-1.png" alt="Car Image">
+                        </div>
+                        <div class="gallery-others-item">
+                            <img src="assets/car-other-2.png" alt="Car Image">
+                        </div>
+                        <div class="gallery-others-item">
+                            <img src="assets/car-other-3.png" alt="Car Image">
+                        </div>
+                        <div class="gallery-others-item">
+                            <img src="assets/car-other-4.png" alt="Car Image">
+                        </div>
+                        <div class="gallery-others-item">
+                            <img src="assets/car-other-5.png" alt="Car Image">
+                        </div>
+                        <div class="gallery-others-item">
+                            <img src="assets/car-other-4.png" alt="Car Image">
+                        </div>
+                        <div class="gallery-others-item">
+                            <img src="assets/car-other-5.png" alt="Car Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="social-share-section">
+                    <img src="assets/social-media.svg" alt="social media">
+                    <a href="#" class="share-article">Share this vehicle!</a>
+                </div>
+                <div class="car-info-section">
+                    <p>Low kilometers! Non-smoker! Great condition! This leather loaded 2014 Chevrolet Malibu LTZ Turbo was purchased through our corporate purchasing program. Take advantage of this well maintained unit at a substantially low price! </p>
+                    <p>This low mileage sedan is still under the manufacturer’s warranty! Save thousands! Packed with features like leather interior, leather wrapped steering wheel with media controls, navigation, bluetooth, satellite radio, back-up camera and so much </p>
+                    <h3>More About This Vehicle</h3>
+                    <p class="blue-text medium">Do you make at least $1800/mo?  If so, we can <span class="underlined">approve you for this car today</span>! We have $0 down options available, plus cash back with the purchase of this vehicle. </p>
+                    <p><span class="red-text medium">You can test drive this vehicle</span> at the current location detailed below, or we can deliver this vehicle to your door for a test drive by completing this form:</p>
+                    <div class="form-section-2">
+                        <h2>Have a question about this vehicle?</h2>
+                        <p>Please fill out the following to talk with an agent:</p>
+                            <form action="#" class="form-section">
+                                <div class="form-item">
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                                <div class="form-item">
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                                <div class="form-item">
+                                    <input type="tel" placeholder="Your Phone">
+                                </div>
+                                <div class="form-item">
+                                    <input type="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-item">
+                                    <textarea name="#" id="#" cols="30" rows="5" placeholder="I would like to arrange a test drive, get more information or inquire about financing this vehicle."></textarea>
+                                </div>
+                                <div class="submit-button-container">
+                                    <button type="submit" class="submit-button">Submit<img src="assets/next-arrow-blue.svg"></button>
+                                </div>
+                            </form>
+                    </div>
+                    <h3>Vehicle features</h3>
+                    <ul class="vehicle-features-list">
+                        <li>Air Conditioning</li>
+                        <li>Power Windows</li>
+                        <li>Stability Control</li>
+                        <li>Alloy Wheels</li>
+                        <li>Rear Defroster</li>
+                        <li>Cloth Interior </li>
+                        <li>Anti-Lock Brakes (ABS)</li>
+                        <li>Side Impact Airbag</li>
+                        <li>Auxiliary 12v Outlet</li>
+                        <li>Anti-Theft</li>
+                        <li>Tilt Steerin</li>
+                        <li>Digital Clock</li>
+                        <li>CD Player</li>
+                        <li>Bucket Seats</li>
+                        <li>Tinted Windows</li>
+                        <li>Dual Airbag</li>
+                        <li>Heated Seats</li>
+                        <li>Inside Hood Release</li>
+                        <li>Fog Lights</li>
+                        <li>Power Locks</li>
+                        <li>Climate Control</li>
+                        <li>Keyless Entry</li>
+                        <li>Traction control</li>
+                        <li>Rear defroster</li>
+                        <li>power brakes</li>
+                        <li>cruise control</li>
+                        <li>side impact airbag</li>
+                        <li>power mirrors</li>
+                        <li>heated exterior mirrors</li>
+                        <li>tilt steerin</li>
+                        <li>power steering</li>
+                        <li>block heater</li>
+                        <li>bucke</li>
+                    </ul>
+                    <div class="social-share-section">
+                        <img src="assets/social-media.svg" alt="social media">
+                        <a href="#" class="share-article">Share this vehicle!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inventory-list">
+        <h3 class="similar-vehicles-heading">Similar Vehicles:</h3>
+        <section class="inventory-list-grid container">
+            <a href="#" class="inventory-list-item">
+                <div class="inventory-list-item-image">
+                    <img src="assets/list-1.png" alt="Car">
+                </div>  
+                <h3>2013 Toyota Corolla CE Sedan</h3>
+                <div class="inventory-list-item__info">
+                    <p class="km">103,000km</p>
+                    <p class="price">$14,995</p>
+                </div>
+            </a>
+            <a class="inventory-list-item sold" href="#">
+                <div class="inventory-list-item-image">
+                    <img src="assets/list-2.png" alt="Car">
+                </div> 
+                <h3>2015 Volkswagen Jetta Sedan</h3>
+                <div class="inventory-list-item__info">
+                    <p class="km">103,000km</p>
+                    <p class="sold">sold!</p>
+                </div>
+            </a>
+            <a href="#" class="inventory-list-item">
+                <div class="inventory-list-item-image">
+                    <img src="assets/list-1.png" alt="Car">
+                </div>  
+                <h3>2013 Toyota Corolla CE Sedan</h3>
+                <div class="inventory-list-item__info">
+                    <p class="km">103,000km</p>
+                    <p class="price">$14,995</p>
+                </div>
+            </a>
+            <a class="inventory-list-item" href="#">
+                <div class="inventory-list-item-image">
+                    <img src="assets/list-3.png" alt="Car">
+                </div> 
+                <h3>2013 Toyota Corolla CE Sedan</h3>
+                <div class="inventory-list-item__info">
+                    <p class="km">103,000km</p>
+                    <div class="prices-flex">
+                        <p class="old-price">$14,995</p>
+                        <p class="new-price">$13,995</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </section>
+    <footer>
+        <div class="main-footer container">
+            <div class="footer-column" id="footer-column-1">
+                <h3>How can we help?</h3>
+                <ul class="footer-menu">
+                        <li><a href="#">Get approved now</a></li>
+                        <li><a href="#">$200 referral!</a></li>
+                        <li><a href="#">Used car inventory</a></li>
+                        <li><a href="#">Auto service</a></li>
+                        <li><a href="#">Car loan calculator</a></li>
+                        <li><a href="#">Meet Laneway</a></li>
+                        <li><a href="#">Value your trade now</a></li>
+                        <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="footer-extra-links">
+                    <a href="#">Terms Of Use / Disclaimer</a>
+                    <span>|</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-column" id="footer-column-2">
+                <div class="footer-column-2-background">
+
+                </div>
+                <h3>What are our clients saying?</h3>
+                <div class="social-column">
+                    <img src="assets/facebook-reviews.svg" alt="Facebook">
+                    <h4>4.8 out of 5</h4>
+                    <p>Based on the opinion of 51 people on our <b>Facebook Business Page</b></p>
+                </div>
+                <div class="social-column">
+                    <img src="assets/google-reviews.svg" alt="Google">
+                    <h4>4.2 out of 5</h4>
+                    <p>Based on the opinion of 24 people on our <b>Google Business Listing</b></p>
+                </div>
+            </div>
+            <div class="footer-column" id="footer-column-3">
+                <h3>Need Help? Contact us now:</h3>
+                <a href="tel:9024974644" class="footer-tel">902-497-4644</a>
+                <p><span class="schedule-days">Monday to Friday:</span>8am to 5pm</p>
+                <p><span class="schedule-days">Saturday:</span>9am to 2pm</p>
+                <p class="copyright">© Copyright 2023 Laneway Auto Loans.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/hamburger-menu.js"></script>
+</body>
+</html>

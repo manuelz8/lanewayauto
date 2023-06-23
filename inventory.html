@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body class="inventory-page">
+    <header class="main-header">
+        <div class="container main-header__top-container">
+            <a href="index.html" class="main-logo">
+                <img src="assets/main-logo.svg" alt="Logo">
+            </a>
+            <div class="main-header__top-container-column-2">
+                <div class="header-info">
+                    <span class="material-symbols-outlined">phone_iphone</span>
+                    <p>Get approved now:</p>
+                    <a href="tel:9024974644">902-497-4644</a>
+                    <form class="search-form" autocomplete="off">
+                        <input id="search" type="search" placeholder="Search ( Make, Model, Type )" autocomplete="off">
+                        <span class="search-button">
+                            <img src="assets/magnifier.svg" alt="">
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="mobile-menu-switch">
+                <span class="material-symbols-outlined menu-icon">
+                    menu
+                </span>
+                <span class="material-symbols-outlined close-icon">
+                    close
+                </span>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-text">
+                    <span class="material-symbols-outlined">phone_iphone</span>
+                    <p>Get approved now:</p>
+                </div>
+                <a class="hamburger-tel" href="tel:9024974644">902-497-4644</a>
+                <ul class="menu-list">
+                    <li><a href="#">Credit Application</a></li>
+                    <li><a href="#">Used car inventory</a></li>
+                    <li><a href="#">Car loan calculator</a></li>
+                    <li><a href="#">Trade-in valuator</a></li>
+                    <li><a href="#">$200 Referral!</a></li>
+                    <li><a href="#">Auto Service</a></li>
+                    <li><a href="#">More </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header__menu">
+            <div class="container">
+                <ul class="menu-list">
+                    <li><a href="#">Credit Application</a></li>
+                    <li><a href="#">Used car inventory</a></li>
+                    <li><a href="#">Car loan calculator</a></li>
+                    <li><a href="#">Trade-in valuator</a></li>
+                    <li><a href="#">$200 Referral!</a></li>
+                    <li><a href="#">Auto Service</a></li>
+                    <li id="more-drop"><a href="#">More <img class="dropdown-button" src="assets/drop-down.svg" alt="Drop-down icon"></a></li>
+                    <ul class="more-options">
+                        <li><a href="#">Option</a></li>
+                        <li><a href="#">Option</a></li>
+                        <li><a href="#">Option</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header__decoration">
+        </div>
+    </header>
+    <a href="#" class="inventory-bg-section-1"></a>
+    <section class="inventory-page-container">
+        <div class="pre-inventory-space"><img src="assets/pre-inventory.svg"></div>
+        <div class="inventory-main-content">
+            <div class="inventory-main-content__left">
+                <h2 class="titles-font blue-text">Search Latest Vehicles:</h2>
+                <form action="#" class="inventory-main-content__left-form">
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Make</option>
+                            <option value="value2">Example</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Model</option>
+                            <option value="value2">Example</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Body  Style</option>
+                            <option value="value2">Example</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Sort By: Date (Newest)</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <label for="#">Year</label>
+                    <div class="inventory-main-content__left-fields">
+                        <input type="number" placeholder="From">
+                        <input type="number" placeholder="To">
+                    </div>
+                    <label for="#">Kilometers</label>
+                    <div class="inventory-main-content__left-fields">
+                        <input type="number" placeholder="From">
+                        <input type="number" placeholder="To">
+                    </div>
+                    <label for="">Transmission</label>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Any</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <label for="">Color</label>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Any</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <label for="">Fuel Type</label>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Any</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <label for="">Number of Seats</label>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Any</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <label for="">Number of Doors</label>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Any</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <label for="">Status</label>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Any</option>
+                            <option value="value2">Price Range</option>
+                        </select>
+                    </div>
+                    <button class="skew-button blue-bg">simple Search</button>
+                    <button class="skew-button"><img src="assets/magnifier.svg">Find my vehicle</button>
+                </form>
+            </div>
+            <div class="inventory-main-content__right">
+                <div class="blog-landing__top-info">
+                    <div class="breadcrumbs">
+                         <a href="index.html" class="breadcrumb">Home</a>
+                         <span>></span>
+                         <a href="blog-landing.html" class="breadcrumb">Used Car Inventory</a>
+                    </div>
+
+                    <p>Showing 1 to 15 of 65 Results</p>
+                </div>
+                <div class="blog-landing__top-heading">
+                    <h1>Used Cars & Trucks in Nova Scotia</h1>
+                    <div class="dropdown-item__container">
+                        <select name="#" id="#" class="dropdown-item">
+                            <option value="value1">Sort By: Date (Newest)</option>
+                            <option value="value2">Example</option>
+                        </select>
+                    </div>
+                </div>
+                <section class="inventory-list-grid">
+                    <a href="#" class="inventory-list-item">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-1.png" alt="Car">
+                        </div>  
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="price">$14,995</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item sold" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-2.png" alt="Car">
+                        </div> 
+                        <h3>2015 Volkswagen Jetta Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="sold">sold!</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-3.png" alt="Car">
+                        </div> 
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <div class="prices-flex">
+                                <p class="old-price">$14,995</p>
+                                <p class="new-price">$13,995</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="inventory-list-item">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-1.png" alt="Car">
+                        </div>  
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="price">$14,995</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item sold" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-2.png" alt="Car">
+                        </div> 
+                        <h3>2015 Volkswagen Jetta Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="sold">sold!</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-3.png" alt="Car">
+                        </div> 
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <div class="prices-flex">
+                                <p class="old-price">$14,995</p>
+                                <p class="new-price">$13,995</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="inventory-list-item">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-1.png" alt="Car">
+                        </div>  
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="price">$14,995</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item sold" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-2.png" alt="Car">
+                        </div> 
+                        <h3>2015 Volkswagen Jetta Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="sold">sold!</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-3.png" alt="Car">
+                        </div> 
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <div class="prices-flex">
+                                <p class="old-price">$14,995</p>
+                                <p class="new-price">$13,995</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="inventory-list-item">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-1.png" alt="Car">
+                        </div>  
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="price">$14,995</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item sold" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-2.png" alt="Car">
+                        </div> 
+                        <h3>2015 Volkswagen Jetta Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="sold">sold!</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-3.png" alt="Car">
+                        </div> 
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <div class="prices-flex">
+                                <p class="old-price">$14,995</p>
+                                <p class="new-price">$13,995</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="inventory-list-item">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-1.png" alt="Car">
+                        </div>  
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="price">$14,995</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item sold" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-2.png" alt="Car">
+                        </div> 
+                        <h3>2015 Volkswagen Jetta Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <p class="sold">sold!</p>
+                        </div>
+                    </a>
+                    <a class="inventory-list-item" href="#">
+                        <div class="inventory-list-item-image">
+                            <img src="assets/list-3.png" alt="Car">
+                        </div> 
+                        <h3>2013 Toyota Corolla CE Sedan</h3>
+                        <div class="inventory-list-item__info">
+                            <p class="km">103,000km</p>
+                            <div class="prices-flex">
+                                <p class="old-price">$14,995</p>
+                                <p class="new-price">$13,995</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <div class="list-controls">
+                    <a href="#" class="skew-button"><img src="assets/back-arrow-red.svg">Back</a>
+                    <div class="pages-list">
+                        <a href="#" class="skew-button active">1</a>
+                        <a href="#" class="skew-button">2</a>
+                        <a href="#" class="skew-button">3</a>
+                    </div>
+                    <a href="#" class="skew-button">Next <img src="assets/next-arrow-red.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="post-inventory-space"></div>
+    </section>
+    <a href="#" class="inventory-bg-section-2"></a>
+    <section class="inventory-more-info">
+        <div class="medium-width">
+            <h2 class="titles-font">Easy Auto Loans for Used Vehicles</h2>
+            <p>Taking the stress out of buying a car, Laneway offers the largest used car inventory in Atlantic Canada. Our experts are happy to design the perfect financing plan that fits your budget and meets your needs. It’s quite logical: with the biggest inventory, we can offer the best prices. Check our reviews in <a href="#">Google</a> or <a href="#">Facebook</a>.</p>
+            <p>You’re spoilt for choice in our Used Car Lot, packed with top automotive brands not often found in the Maritimes at great prices. Better still, there are plenty of added incentives to sweeten every deal, including generous trade-in prices, referral programs, and cashback offers.</p>
+            <h3>What vehicle do you want?</h3>
+            <p>On any given day, there are almost two dozen makes of car – including American, European, and Japanese marques – displayed on our Used Car Lot, each handpicked by the owner. But if you can’t find exactly what you want in your price range, let us know and we’ll help you find your dream wheels, with affordable vehicle financing. Here are  just three of the many options:</p>
+            <ul>
+                <li>If you’re looking for a <a href="#">Honda</a> – from top-selling Civics to premium Acuras – every model that drives off our lot is road-tested through a stringent 180-point process that ensures they’re safe under even the harshest conditions.</li>
+                <li>Famed for their high-performing good value, ultra-reliable <a href="#">Kias</a> offer advanced safety systems that blend cutting-edge technology with precision engineering.</li>
+                <li>Tough but family-friendly, <a href="#">Ford</a> trucks are a long-time favorite – in fact, they’ve been Canada’s best-selling pickup for well over half a century. </li>
+            </ul>
+            <h3>Don’t Worry About Your Credit</h3>
+            <p>You don’t need to worry if your financial track-record isn’t stellar. East Coast Financing will be with you every step of the way, as you rebuild your credit score through an affordable car loan that’s tailored to your monthly income.</p>
+            <p>Just tell us what you want, and Laneway will make it happen – and at the best price!</p>
+        </div>
+    </section>
+    <div class="financing-plan">
+        <h2 class="center titles-font">Let's customize your auto financing plan</h2>
+        <img src="assets/dashed-divider.svg" class="dashed-divider">
+        <p class="red-text-2 center light subtitle">Tell us what kind of vehicle(s) do you want:</p>
+        <div class="financing-plan__cars container">
+            <a href="#" class="financing-plan__item">
+                <img src="assets/truck-1.svg" alt="Truck">
+                <div class="car-selector__button">I want a truck<img src="assets/button-arrows.svg" alt="button-arrows"></div>
+            </a>
+            <a href="#" class="financing-plan__item">
+                <img src="assets/suv-1.svg" alt="suv">
+                <div class="car-selector__button">I want a suv<img src="assets/button-arrows.svg" alt="button-arrows"></div>
+            </a>
+            <a href="#" class="financing-plan__item">
+                <img src="assets/van.svg" alt="Van">
+                <div class="car-selector__button">I want a van<img src="assets/button-arrows.svg" alt="button-arrows"></div>
+            </a>
+            <a href="#" class="financing-plan__item">
+                <img src="assets/car.svg" alt="Car">
+                <div class="car-selector__button">I want a car<img src="assets/button-arrows.svg" alt="button-arrows"></div>
+            </a>
+        </div>
+        <div class="car-info center">
+            <img class="info-icon" src="assets/info-icon.svg" alt="Info">
+            <p class="info-text">Don’t worry, there’s no obligation and you can change your mind about the kind of car loan you want later.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="main-footer container">
+            <div class="footer-column" id="footer-column-1">
+                <h3>How can we help?</h3>
+                <ul class="footer-menu">
+                        <li><a href="#">Get approved now</a></li>
+                        <li><a href="#">$200 referral!</a></li>
+                        <li><a href="#">Used car inventory</a></li>
+                        <li><a href="#">Auto service</a></li>
+                        <li><a href="#">Car loan calculator</a></li>
+                        <li><a href="#">Meet Laneway</a></li>
+                        <li><a href="#">Value your trade now</a></li>
+                        <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="footer-extra-links">
+                    <a href="#">Terms Of Use / Disclaimer</a>
+                    <span>|</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-column" id="footer-column-2">
+                <div class="footer-column-2-background">
+
+                </div>
+                <h3>What are our clients saying?</h3>
+                <div class="social-column">
+                    <img src="assets/facebook-reviews.svg" alt="Facebook">
+                    <h4>4.8 out of 5</h4>
+                    <p>Based on the opinion of 51 people on our <b>Facebook Business Page</b></p>
+                </div>
+                <div class="social-column">
+                    <img src="assets/google-reviews.svg" alt="Google">
+                    <h4>4.2 out of 5</h4>
+                    <p>Based on the opinion of 24 people on our <b>Google Business Listing</b></p>
+                </div>
+            </div>
+            <div class="footer-column" id="footer-column-3">
+                <h3>Need Help? Contact us now:</h3>
+                <a href="tel:9024974644" class="footer-tel">902-497-4644</a>
+                <p><span class="schedule-days">Monday to Friday:</span>8am to 5pm</p>
+                <p><span class="schedule-days">Saturday:</span>9am to 2pm</p>
+                <p class="copyright">© Copyright 2023 Laneway Auto Loans.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/hamburger-menu.js"></script>
+</body>
+</html>
